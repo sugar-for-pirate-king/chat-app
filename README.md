@@ -1,24 +1,15 @@
-# README
+# chat_app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Writing a chat application with [CableReady](https://cableready.stimulusreflex.com/) and [StimuluxReflex](https://docs.stimulusreflex.com/).
 
-Things you may want to cover:
 
-* Ruby version
+### Installation
 
-* System dependencies
+- Run the `bundle install`
+- Run the migration `rails db:create && rails db:migrate`
+- Install the javascript dependencies with `yarn install`
+- Serve the app with `rails s`
 
-* Configuration
+### Demo
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![Demo](/demo-chat-app.gif)

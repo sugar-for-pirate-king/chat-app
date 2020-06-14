@@ -1,0 +1,12 @@
+<% if chats.any? %>
+  <% chats.each do |chat| %>
+    <div class="card my-4">
+      <div class="card-body">
+        <h5 class="card-title"><%= chat.username %></h5>
+        <p class="card-text"><%= chat.text %></p>
+      </div>
+    </div>
+  <% end %>
+<% else %>
+  <p>No chats.</p>
+<% end %>

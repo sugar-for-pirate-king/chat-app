@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# ChatsController
 class ChatsController < ApplicationController
   include CableReady::Broadcaster
 

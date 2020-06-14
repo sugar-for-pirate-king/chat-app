@@ -3,7 +3,17 @@
     <div class="card my-4">
       <div class="card-body">
         <h5 class="card-title"><%= chat.username %></h5>
-        <p class="card-text"><%= chat.text %></p>
+        <p class="card-text">
+          <%= chat.text %>
+          <br>
+          <div class="d-flex justify-content-between">
+            <%= link_to 'Like!', '#', class: 'd-block', data: { reflex: 'click->ChatReflex#like', id: chat.id } %>
+            <div>
+              <span id="like-<%= chat.id %>"><%= chat.likes %></span>
+              <span>likes</span>
+            </div>
+          </div>
+        </p>
       </div>
     </div>
   <% end %>
